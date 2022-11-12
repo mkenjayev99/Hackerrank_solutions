@@ -1,5 +1,4 @@
 n = int(input())
 nums = map(int, input().split())
 nums = list(nums)
-summ = sum([i**3 for i in nums])
-print(summ)
+print(sum(nums))

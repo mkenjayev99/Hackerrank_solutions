@@ -7,8 +7,8 @@ counted = {i:lst.count(i) for i in lst}
 
 val_lst = list(counted.values())
 val_lst = sorted(val_lst)
-
-for i, j in counted.items():
-    if j == val_lst[-1]:
-        print(i)
-        break
+c = 0
+for i in range(len(val_lst)):
+    if val_lst[i] > 1:
+        c += 1
+print(c)
